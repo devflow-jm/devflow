@@ -1,12 +1,14 @@
-import React from 'react';
-import styles from './hero.module.scss';
+import React from "react";
+import styles from "./hero.module.scss";
+import "../../../scss/style.scss";
+import cn from "classnames";
 
 const Hero = () => {
-  return(
+  return (
     <div>
-      <h2 className="header">Hero</h2>
+      <h2 className={cn([styles.test], "test")}>Hero</h2>
     </div>
   );
-}
+};
 
 export default Hero;
